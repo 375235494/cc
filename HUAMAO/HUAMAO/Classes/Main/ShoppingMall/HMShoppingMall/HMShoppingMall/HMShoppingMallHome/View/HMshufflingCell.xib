@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HMshufflingCell">
+            <rect key="frame" x="0.0" y="0.0" width="239" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="239" height="103"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4WV-h9-vip">
+                        <rect key="frame" x="0.0" y="0.0" width="239" height="103"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4WV-h9-vip" secondAttribute="trailing" id="Cj2-d2-Du6"/>
+                <constraint firstItem="4WV-h9-vip" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JCW-qT-OiP"/>
+                <constraint firstAttribute="bottom" secondItem="4WV-h9-vip" secondAttribute="bottom" id="U77-Dt-KR3"/>
+                <constraint firstItem="4WV-h9-vip" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gXe-kN-ts9"/>
+            </constraints>
+            <size key="customSize" width="239" height="103"/>
+            <connections>
+                <outlet property="shufflingImage" destination="4WV-h9-vip" id="Eni-qq-ipE"/>
+            </connections>
+            <point key="canvasLocation" x="119.5" y="78.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

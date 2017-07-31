@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="X56-l1-6Wy" customClass="HMEndView">
+            <rect key="frame" x="0.0" y="0.0" width="409" height="390"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLA-re-fnW">
+                    <rect key="frame" x="30" y="0.0" width="174.5" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="当前竞猜" backgroundImage="未选持仓订单"/>
+                    <state key="disabled" backgroundImage="持仓订单"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="X56-l1-6Wy" eventType="touchUpInside" id="qUX-Tx-8ea"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNO-vg-5l3">
+                    <rect key="frame" x="204.5" y="0.0" width="174.5" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="9qR-ZX-wgs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="竞猜记录" backgroundImage="未选下单提醒"/>
+                    <state key="disabled" backgroundImage="下单提醒"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="X56-l1-6Wy" eventType="touchUpInside" id="1sz-fJ-h8p"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XY5-Os-pmc">
+                    <rect key="frame" x="204.5" y="37" width="204.5" height="5"/>
+                    <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tr9-kH-OZE">
+                    <rect key="frame" x="0.0" y="37" width="204.5" height="5"/>
+                    <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="cz2-sX-HSr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XY5-Os-pmc" firstAttribute="height" secondItem="tr9-kH-OZE" secondAttribute="height" id="3Hn-jb-FJo"/>
+                <constraint firstItem="tr9-kH-OZE" firstAttribute="leading" secondItem="X56-l1-6Wy" secondAttribute="leading" id="DGz-3a-qSQ"/>
+                <constraint firstAttribute="trailing" secondItem="XY5-Os-pmc" secondAttribute="trailing" id="FtK-3I-VhE"/>
+                <constraint firstItem="cNO-vg-5l3" firstAttribute="height" secondItem="fLA-re-fnW" secondAttribute="height" id="Fyj-1T-6Q8"/>
+                <constraint firstItem="tr9-kH-OZE" firstAttribute="top" secondItem="cNO-vg-5l3" secondAttribute="bottom" id="Hai-Rc-pLa"/>
+                <constraint firstItem="XY5-Os-pmc" firstAttribute="leading" secondItem="tr9-kH-OZE" secondAttribute="trailing" id="KKh-fj-lCz"/>
+                <constraint firstItem="fLA-re-fnW" firstAttribute="leading" secondItem="X56-l1-6Wy" secondAttribute="leading" constant="30" id="LMK-Dt-1KO"/>
+                <constraint firstItem="XY5-Os-pmc" firstAttribute="top" secondItem="tr9-kH-OZE" secondAttribute="top" id="OOg-Lc-d9v"/>
+                <constraint firstItem="XY5-Os-pmc" firstAttribute="width" secondItem="tr9-kH-OZE" secondAttribute="width" id="VKi-za-26l"/>
+                <constraint firstAttribute="trailing" secondItem="cNO-vg-5l3" secondAttribute="trailing" constant="30" id="Xed-8a-ffO"/>
+                <constraint firstItem="cNO-vg-5l3" firstAttribute="width" secondItem="fLA-re-fnW" secondAttribute="width" id="Y4X-1N-M9N"/>
+                <constraint firstItem="cNO-vg-5l3" firstAttribute="top" secondItem="fLA-re-fnW" secondAttribute="top" id="cgS-CM-eLV"/>
+                <constraint firstItem="cNO-vg-5l3" firstAttribute="leading" secondItem="fLA-re-fnW" secondAttribute="trailing" id="hUN-Cd-Kkz"/>
+                <constraint firstItem="fLA-re-fnW" firstAttribute="top" secondItem="X56-l1-6Wy" secondAttribute="top" id="iAD-Zv-zHd"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="CiCButton" destination="fLA-re-fnW" id="Uuf-K4-Jzf"/>
+                <outlet property="CiCView" destination="XY5-Os-pmc" id="hIb-rQ-O7b"/>
+                <outlet property="JYView" destination="tr9-kH-OZE" id="xvW-qj-try"/>
+                <outlet property="JYbutton" destination="cNO-vg-5l3" id="3hy-ie-XPq"/>
+            </connections>
+            <point key="canvasLocation" x="30.5" y="-38"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="下单提醒" width="149" height="30"/>
+        <image name="持仓订单" width="149" height="30"/>
+        <image name="未选下单提醒" width="149" height="30"/>
+        <image name="未选持仓订单" width="149" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,27 @@
+//
+//  HMPrefix.pch
+//  HUAMAO
+//
+//  Created by 孙密 on 17/5/17.
+//  Copyright © 2017年 陈臣. All rights reserved.
+//
+
+#ifndef HMPrefix_pch
+#define HMPrefix_pch
+
+#import "Const.h"
+
+#import "UIView+HMView.h"
+
+#import "NSObject+HMString.h"
+
+#import "MBProgressHUD+MJ.h"
+
+#import "UIImageView+WebCache.h"
+
+#import "HMServiceTool.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* HMPrefix_pch */

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="HMTimeMovements">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahy-Y7-513">
+                        <rect key="frame" x="30" y="0.0" width="77" height="76"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="今日走势" backgroundImage="未选中底色">
+                            <color key="titleColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="disabled" backgroundImage="选中底色">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonAction:" destination="KGk-i7-Jjw" eventType="touchDown" id="xkl-5x-waP"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-u1-zzu">
+                        <rect key="frame" x="109" y="0.0" width="76" height="76"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="3分钟" backgroundImage="未选中底色">
+                            <color key="titleColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="disabled" backgroundImage="选中底色">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FCb-WS-hT8"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fli-QJ-m8P">
+                        <rect key="frame" x="187" y="0.0" width="77" height="76"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="5分钟" backgroundImage="未选中底色">
+                            <color key="titleColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="disabled" backgroundImage="选中底色">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AlT-8a-ac5"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zE3-bN-Hui">
+                        <rect key="frame" x="266" y="0.0" width="76" height="76"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="15分钟" backgroundImage="未选中底色">
+                            <color key="titleColor" red="0.42745098039215684" green="0.42745098039215684" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="disabled" backgroundImage="选中底色">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5Dp-rQ-e7R"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fli-QJ-m8P" firstAttribute="top" secondItem="Ahy-Y7-513" secondAttribute="top" id="1Ko-bW-89E"/>
+                    <constraint firstItem="gAy-u1-zzu" firstAttribute="top" secondItem="Ahy-Y7-513" secondAttribute="top" id="2CF-Ov-l09"/>
+                    <constraint firstItem="zE3-bN-Hui" firstAttribute="width" secondItem="Ahy-Y7-513" secondAttribute="width" id="5St-4R-HCX"/>
+                    <constraint firstItem="gAy-u1-zzu" firstAttribute="leading" secondItem="Ahy-Y7-513" secondAttribute="trailing" constant="2" id="Amp-Yp-n10"/>
+                    <constraint firstItem="zE3-bN-Hui" firstAttribute="height" secondItem="Ahy-Y7-513" secondAttribute="height" id="IQ0-oh-mu1"/>
+                    <constraint firstItem="Fli-QJ-m8P" firstAttribute="width" secondItem="Ahy-Y7-513" secondAttribute="width" id="YwY-O0-pIt"/>
+                    <constraint firstItem="Fli-QJ-m8P" firstAttribute="leading" secondItem="gAy-u1-zzu" secondAttribute="trailing" constant="2" id="c7n-op-a1r"/>
+                    <constraint firstItem="Fli-QJ-m8P" firstAttribute="height" secondItem="Ahy-Y7-513" secondAttribute="height" id="h5M-dB-uTU"/>
+                    <constraint firstItem="Ahy-Y7-513" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="lQv-ru-LKR"/>
+                    <constraint firstItem="gAy-u1-zzu" firstAttribute="height" secondItem="Ahy-Y7-513" secondAttribute="height" id="lch-fj-Dzq"/>
+                    <constraint firstAttribute="bottom" secondItem="Ahy-Y7-513" secondAttribute="bottom" id="n3W-oh-GFw"/>
+                    <constraint firstItem="Ahy-Y7-513" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qGe-K7-ffn"/>
+                    <constraint firstItem="gAy-u1-zzu" firstAttribute="width" secondItem="Ahy-Y7-513" secondAttribute="width" id="qeA-tg-fEy"/>
+                    <constraint firstItem="zE3-bN-Hui" firstAttribute="leading" secondItem="Fli-QJ-m8P" secondAttribute="trailing" constant="2" id="sI9-Ma-wFK"/>
+                    <constraint firstAttribute="trailing" secondItem="zE3-bN-Hui" secondAttribute="trailing" constant="30" id="tF7-Fo-eb4"/>
+                    <constraint firstItem="zE3-bN-Hui" firstAttribute="top" secondItem="Ahy-Y7-513" secondAttribute="top" id="ydF-R6-X3D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="ZsButton" destination="Ahy-Y7-513" id="RTw-OV-6F2"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="68.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="未选中底色" width="75" height="27"/>
+        <image name="选中底色" width="75" height="27"/>
+    </resources>
+</document>

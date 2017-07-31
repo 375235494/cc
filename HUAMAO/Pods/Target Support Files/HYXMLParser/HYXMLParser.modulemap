@@ -1,0 +1,6 @@
+framework module HYXMLParser {
+  umbrella header "HYXMLParser-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="7R2-aM-Mti" customClass="HMShowView">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="372"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="二维码" translatesAutoresizingMaskIntoConstraints="NO" id="N6n-gi-tMq">
+                    <rect key="frame" x="0.0" y="0.0" width="371" height="372"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGE-8e-ETJ">
+                    <rect key="frame" x="111" y="350" width="230" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="230" id="b1F-Hp-zy2"/>
+                        <constraint firstAttribute="height" constant="22" id="uWK-z7-SHj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="da0-3f-VPd">
+                    <rect key="frame" x="111" y="135" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="21E-tv-F4k"/>
+                        <constraint firstAttribute="width" constant="150" id="nJT-JG-EVw"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="mGE-8e-ETJ" firstAttribute="leading" secondItem="da0-3f-VPd" secondAttribute="leading" id="Erv-l2-6FF"/>
+                <constraint firstItem="N6n-gi-tMq" firstAttribute="top" secondItem="7R2-aM-Mti" secondAttribute="top" id="TEJ-g2-2RJ"/>
+                <constraint firstItem="da0-3f-VPd" firstAttribute="top" secondItem="7R2-aM-Mti" secondAttribute="top" constant="135" id="TK0-zt-qeZ"/>
+                <constraint firstAttribute="bottom" secondItem="N6n-gi-tMq" secondAttribute="bottom" id="TQG-Qw-rZg"/>
+                <constraint firstItem="mGE-8e-ETJ" firstAttribute="top" secondItem="da0-3f-VPd" secondAttribute="bottom" constant="65" id="Zhv-2j-iib"/>
+                <constraint firstAttribute="trailing" secondItem="N6n-gi-tMq" secondAttribute="trailing" id="fGa-k6-Oqk"/>
+                <constraint firstItem="da0-3f-VPd" firstAttribute="centerX" secondItem="7R2-aM-Mti" secondAttribute="centerX" id="i0e-ax-nOJ"/>
+                <constraint firstItem="N6n-gi-tMq" firstAttribute="leading" secondItem="7R2-aM-Mti" secondAttribute="leading" id="tNI-ka-Z2O"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backimageV" destination="N6n-gi-tMq" id="1HS-Ch-mM4"/>
+                <outlet property="qrcodeImageV" destination="da0-3f-VPd" id="Udi-Pu-SLx"/>
+                <outlet property="yqmcodeLable" destination="mGE-8e-ETJ" id="BLM-pH-sxs"/>
+            </connections>
+            <point key="canvasLocation" x="66.5" y="-95"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="二维码" width="375" height="384"/>
+    </resources>
+</document>

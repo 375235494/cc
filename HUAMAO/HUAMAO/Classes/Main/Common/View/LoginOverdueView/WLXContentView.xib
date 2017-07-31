@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iXi-Re-QFp" customClass="WLXContentView">
+            <rect key="frame" x="0.0" y="0.0" width="416" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证失效，请重新登录" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9i-MP-3fN">
+                    <rect key="frame" x="0.0" y="0.0" width="416" height="50"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="awZ-2J-U1K"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.68235294117647061" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrp-EY-vOO">
+                    <rect key="frame" x="0.0" y="51" width="416" height="65"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" red="1" green="0.29362846199999998" blue="0.24851554870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="SureAction:" destination="iXi-Re-QFp" eventType="touchUpInside" id="e4M-5t-VVg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="l9i-MP-3fN" firstAttribute="leading" secondItem="iXi-Re-QFp" secondAttribute="leading" id="2re-iV-NZH"/>
+                <constraint firstItem="l9i-MP-3fN" firstAttribute="top" secondItem="iXi-Re-QFp" secondAttribute="top" id="DGB-AR-dQk"/>
+                <constraint firstAttribute="trailing" secondItem="l9i-MP-3fN" secondAttribute="trailing" id="E9A-pT-ROg"/>
+                <constraint firstItem="Hrp-EY-vOO" firstAttribute="leading" secondItem="iXi-Re-QFp" secondAttribute="leading" id="RMF-t8-VGR"/>
+                <constraint firstAttribute="bottom" secondItem="Hrp-EY-vOO" secondAttribute="bottom" id="kAA-a6-num"/>
+                <constraint firstAttribute="trailing" secondItem="Hrp-EY-vOO" secondAttribute="trailing" id="n10-wl-7ZN"/>
+                <constraint firstItem="Hrp-EY-vOO" firstAttribute="top" secondItem="l9i-MP-3fN" secondAttribute="bottom" constant="1" id="nNz-YB-3TE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="labletext" destination="l9i-MP-3fN" id="djU-BA-VDa"/>
+            </connections>
+            <point key="canvasLocation" x="486" y="62"/>
+        </view>
+    </objects>
+</document>

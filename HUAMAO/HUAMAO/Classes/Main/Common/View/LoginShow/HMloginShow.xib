@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jGr-Vx-uCf" customClass="HMloginShow">
+            <rect key="frame" x="0.0" y="0.0" width="517" height="491"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gonggao" translatesAutoresizingMaskIntoConstraints="NO" id="HTc-3r-ROK">
+                    <rect key="frame" x="0.0" y="0.0" width="517" height="491"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiB-BN-T2V">
+                    <rect key="frame" x="50" y="93" width="417" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="D09-R8-sPA"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="SureAction:" destination="jGr-Vx-uCf" eventType="touchUpInside" id="vc3-hj-xSv"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1111" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8D-gd-VSw">
+                    <rect key="frame" x="15" y="65" width="487" height="8"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                    <color key="textColor" red="0.42745098039215684" green="0.42352941176470588" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcM-Ux-8Mm">
+                    <rect key="frame" x="228" y="463" width="60" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="bx1-De-eLV"/>
+                        <constraint firstAttribute="width" constant="60" id="unt-U0-qzo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                    <state key="normal" title="确定" backgroundImage="公告按钮">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj4-86-7YV">
+                    <rect key="frame" x="493" y="42" width="14" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="7Pk-PP-7hL"/>
+                        <constraint firstAttribute="height" constant="14" id="veM-i1-O8P"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="公告关闭"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商城公告" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwD-Sr-uah">
+                    <rect key="frame" x="0.0" y="54.5" width="517" height="8.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HTc-3r-ROK" secondAttribute="trailing" id="82V-FA-lJH"/>
+                <constraint firstItem="n8D-gd-VSw" firstAttribute="top" secondItem="fwD-Sr-uah" secondAttribute="bottom" constant="2" id="8pd-bz-T24"/>
+                <constraint firstAttribute="trailing" secondItem="QiB-BN-T2V" secondAttribute="trailing" constant="50" id="Lfh-nd-ASd"/>
+                <constraint firstAttribute="bottom" secondItem="AcM-Ux-8Mm" secondAttribute="bottom" constant="13" id="OaF-ei-PT3"/>
+                <constraint firstItem="HTc-3r-ROK" firstAttribute="leading" secondItem="jGr-Vx-uCf" secondAttribute="leading" id="QSK-az-aUw"/>
+                <constraint firstItem="fwD-Sr-uah" firstAttribute="leading" secondItem="jGr-Vx-uCf" secondAttribute="leading" id="S24-KG-BeX"/>
+                <constraint firstAttribute="trailing" secondItem="pj4-86-7YV" secondAttribute="trailing" constant="10" id="Ufd-5V-ssO"/>
+                <constraint firstItem="n8D-gd-VSw" firstAttribute="leading" secondItem="jGr-Vx-uCf" secondAttribute="leading" constant="15" id="Uzl-fy-SJD"/>
+                <constraint firstItem="pj4-86-7YV" firstAttribute="top" secondItem="jGr-Vx-uCf" secondAttribute="top" constant="42" id="a2O-kk-Nyp"/>
+                <constraint firstItem="HTc-3r-ROK" firstAttribute="top" secondItem="jGr-Vx-uCf" secondAttribute="top" id="bcD-6e-dUR"/>
+                <constraint firstItem="n8D-gd-VSw" firstAttribute="top" secondItem="jGr-Vx-uCf" secondAttribute="top" constant="65" id="h26-gH-u6o"/>
+                <constraint firstItem="QiB-BN-T2V" firstAttribute="top" secondItem="n8D-gd-VSw" secondAttribute="bottom" constant="20" id="hj6-63-mEW"/>
+                <constraint firstAttribute="bottom" secondItem="HTc-3r-ROK" secondAttribute="bottom" id="iit-55-Liv"/>
+                <constraint firstAttribute="trailing" secondItem="n8D-gd-VSw" secondAttribute="trailing" constant="15" id="rPb-IV-ml9"/>
+                <constraint firstItem="QiB-BN-T2V" firstAttribute="leading" secondItem="jGr-Vx-uCf" secondAttribute="leading" constant="50" id="ryv-3e-ePt"/>
+                <constraint firstAttribute="trailing" secondItem="fwD-Sr-uah" secondAttribute="trailing" id="wwR-Bp-TXe"/>
+                <constraint firstItem="AcM-Ux-8Mm" firstAttribute="centerX" secondItem="jGr-Vx-uCf" secondAttribute="centerX" id="yx2-Rj-P06"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageback" destination="HTc-3r-ROK" id="LIH-Fj-bdF"/>
+                <outlet property="message" destination="n8D-gd-VSw" id="kb8-F2-QAs"/>
+                <outlet property="sureButton" destination="QiB-BN-T2V" id="wh1-In-de2"/>
+            </connections>
+            <point key="canvasLocation" x="153" y="-116"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gonggao" width="280" height="294"/>
+        <image name="公告关闭" width="23" height="23"/>
+        <image name="公告按钮" width="121" height="33"/>
+    </resources>
+</document>

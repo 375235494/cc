@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="SSn-KN-hSN" customClass="HMShowPlusView">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="627"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="二维码" translatesAutoresizingMaskIntoConstraints="NO" id="0aS-61-2ad">
+                    <rect key="frame" x="0.0" y="0.0" width="426" height="607"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ooN-Ge-fh3">
+                    <rect key="frame" x="146" y="133" width="135" height="140"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="135" id="O41-PR-hoF"/>
+                        <constraint firstAttribute="height" constant="140" id="iIQ-fg-sSw"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dF-eK-q8P">
+                    <rect key="frame" x="100" y="325" width="266" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WGn-k5-iRy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0aS-61-2ad" firstAttribute="top" secondItem="SSn-KN-hSN" secondAttribute="top" id="0Iw-RP-bOZ"/>
+                <constraint firstAttribute="trailing" secondItem="7dF-eK-q8P" secondAttribute="trailing" constant="60" id="1DQ-QO-Ae5"/>
+                <constraint firstItem="0aS-61-2ad" firstAttribute="leading" secondItem="SSn-KN-hSN" secondAttribute="leading" id="1ji-sw-Wq5"/>
+                <constraint firstItem="0aS-61-2ad" firstAttribute="top" secondItem="SSn-KN-hSN" secondAttribute="top" id="78I-kg-xxi"/>
+                <constraint firstItem="ooN-Ge-fh3" firstAttribute="top" secondItem="SSn-KN-hSN" secondAttribute="top" constant="133" id="7uG-0k-rHn"/>
+                <constraint firstAttribute="trailing" secondItem="0aS-61-2ad" secondAttribute="trailing" id="Dto-yH-7CV"/>
+                <constraint firstItem="7dF-eK-q8P" firstAttribute="top" secondItem="ooN-Ge-fh3" secondAttribute="bottom" constant="52" id="G4G-Xo-cWc"/>
+                <constraint firstAttribute="trailing" secondItem="0aS-61-2ad" secondAttribute="trailing" id="OzA-Mb-GL9"/>
+                <constraint firstItem="0aS-61-2ad" firstAttribute="leading" secondItem="SSn-KN-hSN" secondAttribute="leading" id="Qe4-Wc-1gW"/>
+                <constraint firstItem="ooN-Ge-fh3" firstAttribute="centerX" secondItem="SSn-KN-hSN" secondAttribute="centerX" id="S32-gL-Mv6"/>
+                <constraint firstItem="7dF-eK-q8P" firstAttribute="leading" secondItem="SSn-KN-hSN" secondAttribute="leading" constant="100" id="S5a-rb-uhq"/>
+                <constraint firstAttribute="bottom" secondItem="0aS-61-2ad" secondAttribute="bottom" constant="20" id="S5b-IC-qWp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="qrcodeImageV" destination="ooN-Ge-fh3" id="YCG-9T-5nc"/>
+                <outlet property="yqmcodeLable" destination="7dF-eK-q8P" id="7lV-mH-5ol"/>
+            </connections>
+            <point key="canvasLocation" x="48" y="-10.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="二维码" width="375" height="384"/>
+    </resources>
+</document>

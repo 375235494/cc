@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HMGoldGameHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金豆活动" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cts-WP-0G0">
+                    <rect key="frame" x="155" y="25" width="65.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REY-K1-Z7Y" userLabel="magrView">
+                    <rect key="frame" x="142" y="49.5" width="91.5" height="3"/>
+                    <color key="backgroundColor" red="0.98039215690000003" green="0.098039215690000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="7Tm-mm-mZ4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Cts-WP-0G0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="0Es-zO-7hY"/>
+                <constraint firstItem="REY-K1-Z7Y" firstAttribute="centerX" secondItem="Cts-WP-0G0" secondAttribute="centerX" id="2G3-v8-iCi"/>
+                <constraint firstItem="Cts-WP-0G0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="AyY-Ca-tSe"/>
+                <constraint firstItem="REY-K1-Z7Y" firstAttribute="top" secondItem="Cts-WP-0G0" secondAttribute="bottom" constant="5" id="ZHf-3D-c7e"/>
+                <constraint firstItem="REY-K1-Z7Y" firstAttribute="width" secondItem="Cts-WP-0G0" secondAttribute="width" multiplier="1.4" id="iOW-i1-LSD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="14.5" y="223"/>
+        </view>
+    </objects>
+</document>

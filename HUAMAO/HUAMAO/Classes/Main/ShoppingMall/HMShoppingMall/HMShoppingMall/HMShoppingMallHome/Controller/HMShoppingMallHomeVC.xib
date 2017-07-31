@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMShoppingMallHomeVC">
+            <connections>
+                <outlet property="backScrolView" destination="2Ve-kB-u2m" id="HET-lY-gje"/>
+                <outlet property="view" destination="bUP-Is-0cL" id="7MV-Vl-Dxf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bUP-Is-0cL">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ve-kB-u2m">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2Ve-kB-u2m" secondAttribute="trailing" id="9hC-T1-K2e"/>
+                <constraint firstAttribute="bottom" secondItem="2Ve-kB-u2m" secondAttribute="bottom" id="A3S-SJ-Pv3"/>
+                <constraint firstItem="2Ve-kB-u2m" firstAttribute="top" secondItem="bUP-Is-0cL" secondAttribute="top" id="ExL-te-RNc"/>
+                <constraint firstItem="2Ve-kB-u2m" firstAttribute="leading" secondItem="bUP-Is-0cL" secondAttribute="leading" id="wRu-GP-hlE"/>
+            </constraints>
+            <point key="canvasLocation" x="30" y="-59"/>
+        </view>
+    </objects>
+</document>

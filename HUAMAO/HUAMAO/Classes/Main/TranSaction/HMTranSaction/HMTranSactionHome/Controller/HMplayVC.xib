@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HMplayVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Zz-D6-tRh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZpH-rc-fNj">
+                            <rect key="frame" x="0.0" y="20" width="60" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="yc6-Ha-3cN"/>
+                            </constraints>
+                            <state key="normal" image="返回"/>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="lDf-bs-1EV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="3hR-CF-s3Q"/>
+                        <constraint firstItem="ZpH-rc-fNj" firstAttribute="leading" secondItem="2Zz-D6-tRh" secondAttribute="leading" id="Kxi-Uf-SQR"/>
+                        <constraint firstItem="ZpH-rc-fNj" firstAttribute="top" secondItem="2Zz-D6-tRh" secondAttribute="top" constant="20" id="e1F-12-brl"/>
+                        <constraint firstAttribute="bottom" secondItem="ZpH-rc-fNj" secondAttribute="bottom" id="pNG-gd-tPh"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="《竞猜玩法说明》" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwd-C0-qNv">
+                    <rect key="frame" x="0.0" y="74" width="375" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.58431372549019611" green="0.58039215686274503" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuo-d7-6sV">
+                    <rect key="frame" x="20" y="105" width="335" height="134"/>
+                    <string key="text">金豆竞猜玩法说明：本次竞猜活动分3个时间段，依次为60秒、180秒和300秒，根据当前点位开始竞猜，选择超过或不超过当前点位，待相应竞猜周期到达后，系统自动进行计算胜负。最低竞猜金豆为100金豆，最高为5000金豆，竞猜最大持有上线为5000豆。竞猜周期到达后，会自动提示竞猜结果，竞猜活动时间为2017年7月1日至2017年10月1日，若有时间变动，则以官方公告为准。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.58431372549019611" green="0.58039215686274503" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="竞猜项目开始前用户须点击接受协议，若拒绝则视为放弃竞猜活动，若有疑问，请点击“在线客服”或“我要反馈”给我们留言咨询，活动最终解释权归国翠商城所有。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ob-4l-cBj">
+                    <rect key="frame" x="20" y="247" width="335" height="67"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.58431372549019611" green="0.58039215686274503" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="虚线提现" translatesAutoresizingMaskIntoConstraints="NO" id="dJY-NI-BSg">
+                    <rect key="frame" x="20" y="334" width="335" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="oXJ-q4-uTR"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M99-h9-AQY">
+                    <rect key="frame" x="38" y="356" width="300" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="Nn8-Mc-pld"/>
+                    </constraints>
+                    <state key="normal" title="我知道啦" backgroundImage="按钮提现">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="SureAction:" destination="-1" eventType="touchUpInside" id="9y9-6i-KTr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2Zz-D6-tRh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1QJ-ol-wd3"/>
+                <constraint firstAttribute="trailing" secondItem="Xuo-d7-6sV" secondAttribute="trailing" constant="20" id="1gU-Qb-Yhd"/>
+                <constraint firstAttribute="trailing" secondItem="dJY-NI-BSg" secondAttribute="trailing" constant="20" id="5nB-Hq-gQN"/>
+                <constraint firstItem="2Zz-D6-tRh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="67N-Hl-l3V"/>
+                <constraint firstItem="dJY-NI-BSg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="8fW-jH-h8c"/>
+                <constraint firstItem="Xuo-d7-6sV" firstAttribute="top" secondItem="Vwd-C0-qNv" secondAttribute="bottom" constant="10" id="EFA-Sp-3bw"/>
+                <constraint firstItem="Vwd-C0-qNv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FC0-2o-QG4"/>
+                <constraint firstItem="Vwd-C0-qNv" firstAttribute="top" secondItem="2Zz-D6-tRh" secondAttribute="bottom" constant="10" id="Ixp-ct-NYq"/>
+                <constraint firstItem="4Ob-4l-cBj" firstAttribute="top" secondItem="Xuo-d7-6sV" secondAttribute="bottom" constant="8" id="MNa-9w-gFQ"/>
+                <constraint firstAttribute="trailing" secondItem="2Zz-D6-tRh" secondAttribute="trailing" id="R8m-nw-2Ud"/>
+                <constraint firstAttribute="trailing" secondItem="Vwd-C0-qNv" secondAttribute="trailing" id="Vya-nA-y1a"/>
+                <constraint firstItem="M99-h9-AQY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="X5U-79-8tC"/>
+                <constraint firstItem="M99-h9-AQY" firstAttribute="top" secondItem="dJY-NI-BSg" secondAttribute="bottom" constant="20" id="a73-Fe-AVy"/>
+                <constraint firstItem="dJY-NI-BSg" firstAttribute="top" secondItem="4Ob-4l-cBj" secondAttribute="bottom" constant="20" id="qbi-6y-CJk"/>
+                <constraint firstItem="Xuo-d7-6sV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ub7-HU-XvW"/>
+                <constraint firstItem="4Ob-4l-cBj" firstAttribute="leading" secondItem="Xuo-d7-6sV" secondAttribute="leading" id="vfs-xY-cJH"/>
+                <constraint firstItem="4Ob-4l-cBj" firstAttribute="trailing" secondItem="Xuo-d7-6sV" secondAttribute="trailing" id="xht-yR-wbV"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="按钮提现" width="270" height="37"/>
+        <image name="虚线提现" width="375" height="1"/>
+        <image name="返回" width="11" height="18"/>
+    </resources>
+</document>

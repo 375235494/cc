@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="KGk-i7-Jjw" customClass="HMHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xq-bT-vVu">
+                        <rect key="frame" x="39" y="26" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="银行卡" translatesAutoresizingMaskIntoConstraints="NO" id="q0d-1r-4sO">
+                        <rect key="frame" x="15" y="27.5" width="14" height="14"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFu-OC-MAh">
+                        <rect key="frame" x="0.0" y="67.5" width="622" height="1"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="oi8-UK-E73"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9b-ge-dkF">
+                        <rect key="frame" x="0.0" y="0.0" width="622" height="1"/>
+                        <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="o1h-XS-R9q"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="q0d-1r-4sO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="3qs-kX-0sY"/>
+                    <constraint firstAttribute="bottom" secondItem="aFu-OC-MAh" secondAttribute="bottom" id="8kn-94-6cB"/>
+                    <constraint firstItem="m9b-ge-dkF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ATg-fL-r29"/>
+                    <constraint firstItem="7xq-bT-vVu" firstAttribute="leading" secondItem="q0d-1r-4sO" secondAttribute="trailing" constant="10" id="Vm2-S3-j5z"/>
+                    <constraint firstItem="7xq-bT-vVu" firstAttribute="centerY" secondItem="q0d-1r-4sO" secondAttribute="centerY" id="bRs-mc-bFe"/>
+                    <constraint firstAttribute="trailing" secondItem="aFu-OC-MAh" secondAttribute="trailing" constant="-200" id="e8Y-xP-pxe"/>
+                    <constraint firstItem="aFu-OC-MAh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fEd-Mj-Fov"/>
+                    <constraint firstItem="q0d-1r-4sO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="kmI-tN-M1U"/>
+                    <constraint firstItem="m9b-ge-dkF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="t6W-Ow-5Mr"/>
+                    <constraint firstAttribute="trailing" secondItem="m9b-ge-dkF" secondAttribute="trailing" constant="-200" id="ywj-K4-Equ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageV" destination="q0d-1r-4sO" id="Rs1-sr-KFf"/>
+                <outlet property="titleLab" destination="7xq-bT-vVu" id="XGk-UG-tIY"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="-88.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="银行卡" width="14" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4zf-s7-4l5" customClass="HMRiskwarningView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="706"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="《国翠商城服务协议》" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHk-zL-eBl">
+                    <rect key="frame" x="0.0" y="10" width="600" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.61960784313725492" green="0.10588235294117647" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7J7-FX-v16">
+                    <rect key="frame" x="0.0" y="46" width="600" height="595"/>
+                    <mutableString key="text">尊敬的用户：
+        在接受本协议之前，请仔细阅读本协议的全部内容，国翠商城（以下简称“本公司”）保留本协议条款的最终解释权。为使用国翠商城服务（以下简称“本服务”），您应当阅读并遵守《国翠商城服务协议》（以下简称“本协议”）。请您务必仔细阅读、充分理解各条款内容，特别是免除或限制责任的相应条款，以及开通或使用某项服务的单独协议，如果您不同意本协议的任意内容，或者无法准确理解本公司对条款的解释，请不要进行后续操作，包括但不限于不要接受本协议，不使用本服务。如果您对本协议的条款有疑问，请通过本公司在线客服渠道进行询问，本公司将向您解释条款内容。如果您未满18周岁或年满65岁以上，其自动视为放弃拒绝该协议。一、本协议是您与国翠商城之间关于您使用国翠商城服务所订立的协议。“国翠商城”是指国翠公司及其相关服务可能存在的运营关联单位。“用户”是指注册登录、使用国翠商城的个人或组织，在本协议中更多地称为“您”。“其他用户”是指非注册用户本人，操作或使用同一账号的国翠商城的其他个人或组织。二、服务范围国翠商城提供以金丝木交易为主的商品交易服务平台，提供商品咨询服务。服务介绍2.1 商品购买用户登录商城之后，可充值用于购物的金豆，选中购买的商品可直接用金豆结算购买。2.2 商品发货用户付款之后，填写收货人地址，商城则按收货人地址直接发货，用户可根据单号直接查询物流情况。三、使用本服务即视为您已阅读并同意受本协议的约束。国翠商城有权在必要时修改本协议条款。您可以在相关服务页面查阅最新版本的条款。本协议条款变更后，如果您继续使用国翠商城服务，即视为您已接受修改后的协议。如果您不接受修改后的协议，应当停止使用国翠商城服务。四、您理解并同意，国翠商城仅为用户提供电商服务，您必须为自己注册帐号下的一切行为负责，包括您所参加的本商城促销活动以及由此产生的任何后果。您应对本服务中的内容自行加以判断，并承担因使用服务而引起的所有风险，包括因对内容的正确性、完整性或实用性的依赖而产生的风险。国翠商城无法且不会对因前述风险而导致的任何损失或损害承担责任。                       </mutableString>
+                    <color key="textColor" red="0.68235294117647061" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Faw-Nn-4l2">
+                    <rect key="frame" x="200" y="656" width="200" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="BF4-lh-EuX"/>
+                        <constraint firstAttribute="width" constant="200" id="jg6-AR-qFw"/>
+                    </constraints>
+                    <state key="normal" title="同意">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="7J7-FX-v16" secondAttribute="trailing" id="2gh-4T-yQr"/>
+                <constraint firstItem="7J7-FX-v16" firstAttribute="leading" secondItem="4zf-s7-4l5" secondAttribute="leading" id="DdJ-hV-h9u"/>
+                <constraint firstItem="7J7-FX-v16" firstAttribute="top" secondItem="VHk-zL-eBl" secondAttribute="bottom" constant="15" id="LSa-Cx-QsH"/>
+                <constraint firstAttribute="trailing" secondItem="VHk-zL-eBl" secondAttribute="trailing" id="XkS-3c-kwu"/>
+                <constraint firstAttribute="bottom" secondItem="Faw-Nn-4l2" secondAttribute="bottom" constant="15" id="Xnw-4W-Qx9"/>
+                <constraint firstItem="VHk-zL-eBl" firstAttribute="top" secondItem="4zf-s7-4l5" secondAttribute="top" constant="10" id="dEs-aA-ffd"/>
+                <constraint firstItem="Faw-Nn-4l2" firstAttribute="top" secondItem="7J7-FX-v16" secondAttribute="bottom" constant="15" id="fMr-Ds-Xh5"/>
+                <constraint firstItem="Faw-Nn-4l2" firstAttribute="centerX" secondItem="4zf-s7-4l5" secondAttribute="centerX" id="mX9-yg-beN"/>
+                <constraint firstItem="VHk-zL-eBl" firstAttribute="leading" secondItem="4zf-s7-4l5" secondAttribute="leading" id="tUV-Ah-89b"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="SureButton" destination="Faw-Nn-4l2" id="3cR-ej-6Td"/>
+                <outlet property="textTextView" destination="7J7-FX-v16" id="q2I-Ju-9TN"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="145"/>
+        </view>
+    </objects>
+</document>
